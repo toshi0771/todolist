@@ -69,6 +69,29 @@ export default function TodoApp() {
       </div>
 
       <div className="max-w-5xl mx-auto px-6 py-8">
+        {/* Instructions Section */}
+        <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-200/60 p-6 mb-8">
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">使い方</h2>
+          <div className="space-y-3 text-gray-700 text-[15px] leading-relaxed">
+            <div className="flex items-start space-x-3">
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-semibold text-sm mt-0.5">1</div>
+              <p>下の入力欄にタスクを入力して「追加」ボタンをクリックすると、左側の「進行中」リストに追加されます。</p>
+            </div>
+            <div className="flex items-start space-x-3">
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-semibold text-sm mt-0.5">2</div>
+              <p>タスクの左側にある丸いチェックボックスをクリックすると、タスクが完了状態になり、右側の「完了」リストに移動します。</p>
+            </div>
+            <div className="flex items-start space-x-3">
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-semibold text-sm mt-0.5">3</div>
+              <p>完了したタスクのチェックボックスを再度クリックすると、未完了状態に戻り、「進行中」リストに戻ります。</p>
+            </div>
+            <div className="flex items-start space-x-3">
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-semibold text-sm mt-0.5">4</div>
+              <p>タスクはブラウザに自動保存されるため、ページを閉じても次回アクセス時に復元されます。</p>
+            </div>
+          </div>
+        </div>
+
         {/* Task Lists Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           {/* Active Tasks */}
